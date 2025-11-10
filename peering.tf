@@ -7,7 +7,7 @@ resource "aws_vpc_peering_connection" "peering" {
         var.common_tags,
         var.vpc_peering_tags,
         {
-            Name = "${local.Name}"
+            Name = "${local.name}"
         }
     )
 }
